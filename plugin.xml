@@ -1,4 +1,4 @@
-<plugin id="org.apache.cordova.core.dialogs" version="0.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+<plugin id="com.phonegap.plugins.video" version="0.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
     <name>VideoPlayer</name>
     <description>Cordova Video Player Plugin</description>
     <license>Apache 2.0</license>
