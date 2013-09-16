@@ -1,0 +1,18 @@
+<plugin id="org.apache.cordova.core.dialogs" version="0.2.0" xmlns="http://apache.org/cordova/ns/plugins/1.0">
+    <name>VideoPlayer</name>
+    <description>Cordova Video Player Plugin</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,video player</keywords>
+    <js-module src="www/video.js" name="videoplayer">
+        <clobbers target="window.videoplayer" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="VideoPlayer">
+                <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+            </feature>
+        </config-file>
+        <source-file src="src/VideoPlayer.java" target-dir="src/com/phonegap/plugins/video" />
+    </platform>
+</plugin>
