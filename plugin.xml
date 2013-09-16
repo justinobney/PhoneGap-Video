@@ -3,8 +3,8 @@
     <description>Cordova Video Player Plugin</description>
     <license>Apache 2.0</license>
     <keywords>cordova,video player</keywords>
-    <js-module src="www/video.js" name="videoplayer">
-        <merges target="window.plugins" />
+    <js-module src="www/video.js" name="videoPlayer">
+        <merges target="window.plugins.videoPlayer" />
     </js-module>
     <!-- android -->
     <platform name="android">

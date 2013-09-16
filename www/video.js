@@ -2,7 +2,7 @@ cordova.define("cordova/plugin/videoplayer",
   function(require, exports, module) {
     var exec = require("cordova/exec");
     var VideoPlayer = function () {};
- 
+
     /**
      * Starts the video player intent
      *
@@ -11,11 +11,11 @@ cordova.define("cordova/plugin/videoplayer",
     VideoPlayer.prototype.play = function(url) {
         exec(null, null, "VideoPlayer", "playVideo", [url]);
     };
- 
+
     var videoPlayer = new VideoPlayer();
     module.exports = videoPlayer;
 });
- 
+
 if (!window.plugins) {
     window.plugins = {};
 }
