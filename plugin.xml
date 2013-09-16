@@ -4,7 +4,7 @@
     <license>Apache 2.0</license>
     <keywords>cordova,video player</keywords>
     <js-module src="www/video.js" name="videoPlayer">
-        <clobbers target="window.plugins" />
+        <merges target="window.plugins" />
     </js-module>
     <!-- android -->
     <platform name="android">
